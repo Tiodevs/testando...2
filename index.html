@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <title>QR code</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section class="section" id="navAll">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                            <button class="button4">
+                                <a href="#href_GeradorDeQR">
+                                    Gerador de QR
+                                </a>
+                            </button>
+                        </div>
+                        <div class="column">
+                            <button class="button4">
+                                <a href="#href-form">
+                                    Formulario
+                                </a>
+                            </button>
+                        </div>
+                        <div class="column">
+                            <button class="button4">
+                                <a href="#alertas">
+                                    Alertas
+                                </a>
+                            </button>
+                        </div>
+                        <div class="column">
+                            <button class="button4">
+                                <a href="#cards">
+                                    Cards
+                                </a>
+                            </button>
+                        </div>
+                        <div class="column">
+                            <button class="button4">
+                                <a href="#carossel">
+                                    Carossel
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section" id="texto-apresentacao">
+            <div class="container">
+                <div class="columns" id="apresentacao">
+                    <div class="column" id="space-foto">
+                        <div>
+                            <img src="./Design sem nome (4).png" id="foto-apresentacao">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <div id="hello">
+                                <h2 class="texto-apresentacao1">HELLO</h2>
+
+                            </div>
+
+                            <p class="texto-apresentacao2">I AM FELIPE SANTOS</p>
+                            <h1 class="texto-apresentacao3">JUNIOR FRONTEND DEVELOPER
+                            </h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section class="content" id="href_GeradorDeQR">
+            <div class="container" id="GeradorDeQR">
+                <input type="text" placeholder="Digite aqui..." class="input" onchange="generateQR()">
+                <button type="button" onclick="generateQR()">
+                    Generate QR
+                </button>
+                <div id="qr-image">
+                    <span class="error"></span><br />
+                    <img src="" id="img">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="section" id="href-form">
+            <div class="columns">
+                <div class="column">
+                    <form class="box" id="form">
+                        <div>
+                            <div>
+                                <label id="form-text">Nome completo</label>
+                            </div>
+                            <input type="text" id="text" placeholder="Felipe P. dos Santos" class="input">
+                        </div>
+                        <div>
+                            <div>
+                                <label id="form-text">Email</label>
+                            </div>
+                            <input type="text" id="text" placeholder="exemplo@gmail.com" class="input">
+                        </div>
+                        <div>
+                            <div>
+                                <label id="form-text">Senha</label>
+                            </div>
+
+                            <input type="text" id="text" placeholder="******" class="input">
+                        </div>
+
+
+                        <button class="button is-primary" id="botao-form">entrar</button>
+                    </form>
+                </div>
+                <div class="column">
+                    <form class="box" id="form">
+                        <div>
+                            <div>
+                                <label id="form-text">Nome completo</label>
+                            </div>
+                            <input type="text" id="text" placeholder="Felipe P. dos Santos" class="input">
+                        </div>
+                        <div>
+                            <div>
+                                <label id="form-text">Email</label>
+                            </div>
+                            <input type="text" id="text" placeholder="exemplo@gmail.com" class="input">
+                        </div>
+                        <div>
+                            <div>
+                                <label id="form-text">Senha</label>
+                            </div>
+
+                            <input type="text" id="text" placeholder="******" class="input">
+                        </div>
+
+                        <div>
+                            <div>
+                                <label id="form-text">Confirmar enha</label>
+                            </div>
+
+                            <input type="text" id="text" placeholder="******" class="input">
+                        </div>
+
+
+                        <button class="button is-primary" id="botao-form">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="section" id="alertas">
+
+        </section>
+
+        <hr>
+
+        <section class="section" id="cards">
+            <h2>Aqui vai ser os cards</h2>
+        </section>
+
+        <hr>
+
+        <section class="section" id="carossel">
+            <h2>Aqui vai ser os carossel</h2>
+        </section>        
+
+    </main>
+
+    <div onclick="scrollToTop()" class="scrollTop">Top</div>
+
+</body>
+
+</html>
